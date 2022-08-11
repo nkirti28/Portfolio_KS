@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeBG from "../../assets/home-bg.jpg";
+import homeLogo from "../../assets/office.png";
 import Particle from "../Particles";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -25,19 +25,22 @@ function Home() {
                 <strong className="main-name"> Kirti Shelar</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}></div>
+              <div style={{ padding: 50, textAlign: "left" }}>
+                <Type />
+              </div>
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
-                src={homeBG}
-                alt="background picture"
+                src={homeLogo}
+                alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
               />
             </Col>
           </Row>
         </Container>
+        <Home2 />
       </Container>
     </section>
   );
