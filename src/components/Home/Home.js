@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeBG from "../../assets/home-bg.jpg";
-import Particle from "../Particle";
-// import Home2 from "./Home2";
-// import Type from "./Type";
+import Particle from "../Particles";
+import Home2 from "./Home2";
+import Type from "./Type";
 
 function Home() {
   return (
@@ -42,3 +42,5 @@ function Home() {
     </section>
   );
 }
+
+export default Home;
